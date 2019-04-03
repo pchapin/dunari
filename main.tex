@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FILE    : main.tex
+% AUTHOR  : (C) Copyright 2018 by Peter C. Chapin
+% SUBJECT : Master document for "The Dunari"
+%
+% Send comments or bug reports to:
+%
+%       Peter C. Chapin
+%       258 Whitewater Circle
+%       Williston, VT 05495
+%       peter@pchapin.org
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%+++++++++++++++++++++++++++++++++
+% Preamble and global declarations
+%+++++++++++++++++++++++++++++++++
+\documentclass{scrbook}
+%\documentclass[12pt]{scrbook}
+
+% Common packages. Uncomment as needed.
+\usepackage{setspace}
+%\usepackage{fullpage}
+%\usepackage{graphicx}
+%\usepackage[margin=1.5in]{geometry}
+\usepackage{hyperref}
+
+%\setlength{\parindent}{0em}
+%\setlength{\parskip}{1.75ex plus0.5ex minus0.5ex}
+
+% Suppress chapter numbering. I'll manually number the chapters by using numbers as names.
+\setcounter{secnumdepth}{-1}
+
+% Suppress chapter name in page headings (page numbers are still included).
+\pagestyle{myheadings}
+\markboth{}{}
+
+\newcommand{\alien}[1]{\textit{#1}}  % Used for alien words (English words in Argenian text).
+\newcommand{\e}[1]{\textit{#1}}      % Used for spoken English text.
+\newcommand{\spacebreak}{%
+  \vspace{1.0em}\centerline{$\ast\hspace{2.0em}\ast\hspace{2.0em}\ast$}\vspace{1.0em}%
+}
+
+\doublespacing
+
+%++++++++++++++++++++
+% The document itself
+%++++++++++++++++++++
+\begin{document}
+
+%-----------------------
+% Title page information
+%-----------------------
+\title{The Dunari\\DRAFT}
+\author{Peter C. Chapin}
+\date{Generated: \today}
+\maketitle
+
+\input{Prologue}
+
+\part{Arrival}
+\input{002}
+\input{003}
+\input{005}
+\input{007}
+\input{011}
+\input{013}
+\input{017}
+\input{019}
+\input{023}
+\input{029}
+
+\part{Teacher}
+\input{031}
+\input{037}
+\input{041}
+\input{043}
+\input{047}
+\input{053}
+\input{059}
+\input{061}
+\input{067}
+\input{071}
+
+\part{Jahelle}
+\input{073}
+\input{079}
+\input{083}
+\input{089}
+\input{097}
+\input{101}
+\input{103}
+\input{107}
+
+\input{Epilogue}
+
+\end{document}

@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FILE    : main.tex
+% AUTHOR  : (C) Copyright 2013 by Peter C. Chapin
+% SUBJECT : Master document for my collection of notes related to "Dunari"
+%
+% Send comments or bug reports to:
+%
+%       Peter C. Chapin
+%       Computer Information Systems
+%       Vermont Technical College
+%       Randolph Center, VT 05061
+%       PChapin@vtc.vsc.edu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%+++++++++++++++++++++++++++++++++
+% Preamble and global declarations
+%+++++++++++++++++++++++++++++++++
+\documentclass{book}
+%\documentclass[12pt]{book}
+
+% Common packages. Uncomment as needed.
+%\usepackage{doublespace}
+%\usepackage{fullpage}
+%\usepackage{graphicx}
+\usepackage{hyperref}
+
+%\setlength{\parindent}{0em}
+%\setlength{\parskip}{1.75ex plus0.5ex minus0.5ex}
+
+\newcommand{\alien}[1]{\textit{#1}}
+\newcommand{\breakpoint}{%
+  \vspace{1.0em}\centerline{$\ast\hspace{2.0em}\ast\hspace{2.0em}\ast$}\vspace{1.0em}%
+}
+
+%++++++++++++++++++++
+% The document itself
+%++++++++++++++++++++
+\begin{document}
+
+%-----------------------
+% Title page information
+%-----------------------
+\title{Rujaria Notes}
+\author{Peter C. Chapin}
+\date{Generated: \today}
+\maketitle
+
+\input{SpaceFlight}
+\input{Rujar}
+
+\end{document}
